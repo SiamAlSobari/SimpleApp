@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/widgets/app_bar_layout.dart';
-import 'package:simple_app/widgets/bottom_nav_layout.dart';
+import 'package:simple_app/widgets/card_list.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,9 +7,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const AppBarLayout(),
-      body: Center(child: Text("asa")),
-      bottomNavigationBar: const BottomNavLayout(),
+      body: const CardList(),
     );
   }
 }

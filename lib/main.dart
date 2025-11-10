@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/screens/home_screen.dart';
+import 'package:simple_app/widgets/main_layout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,12 +14,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        splashColor: Colors.transparent
+        splashColor: Colors.transparent,
       ),
-      initialRoute: '/',
-      routes: {
-        '/':(context) => const HomeScreen()
-      },
+      home: const BottomNavLayout(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
