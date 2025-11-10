@@ -28,7 +28,15 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: Center(child: Text("Kontol bapak kau pecah")),
+        body: Center(
+          child: Container(
+            alignment: Alignment.center,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Text("bapak "), Text(" bapak")],
+            ),
+          ),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.blue,
           items: const [
